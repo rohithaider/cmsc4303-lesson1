@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:lesson1/screen/materialdesign_screen.dart';
 
 class StartScreen extends StatelessWidget {
   static const routeName = '/startScreen';
@@ -46,9 +47,10 @@ class StartScreen extends StatelessWidget {
         children: [
           RaisedButton(
             onPressed: () {
-              print('Menu 1');
+              Navigator.pushNamed(context,
+                  MaterialDesignScreen.routeName); // navigating to another screen
             },
-            child: Text('Menu 1'),
+            child: Text('Material Design Demo'),
           ),
           RaisedButton(
             onPressed: () {
@@ -58,6 +60,22 @@ class StartScreen extends StatelessWidget {
           ),
           Text('third menu')
         ],
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          print('Floating action button');
+        },
+        child: Icon(Icons.add),
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+        items: [
+          BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
+          BottomNavigationBarItem(icon: Icon(Icons.business), label: 'Business'),
+        ],
+        currentIndex: 1,
+        onTap: (index) {
+          print('Current index = $index');
+        },
       ),
     );
   }
