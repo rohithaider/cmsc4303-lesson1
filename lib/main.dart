@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:lesson1/screen/image_screen.dart';
 import 'package:lesson1/screen/materialdesign_screen.dart';
 import 'package:lesson1/screen/start_screen.dart';
 
@@ -12,14 +13,16 @@ class Lesson1App extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        brightness: Brightness.dark,
-        primaryColor: Colors.red[700],
-      ),
+          brightness: Brightness.dark,
+          primaryColor: Colors.red[700],
+          textTheme:
+              TextTheme(headline1: TextStyle(fontSize: 30.0, color: Colors.yellow[900]))),
       initialRoute: StartScreen.routeName,
       routes: {
         StartScreen.routeName: (context) => StartScreen(),
         MaterialDesignScreen.routeName: (context) =>
             MaterialDesignScreen(), //using annoynimous function and arrow function. buildcontext is not needed
+        ImageScreen.routeName: (context) => ImageScreen(),
       },
     );
   }
