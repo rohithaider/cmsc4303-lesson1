@@ -21,6 +21,27 @@ class StartScreen extends StatelessWidget {
               })
         ],
       ),
+      drawer: Drawer(
+        child: ListView(
+          children: [
+            DrawerHeader(
+              child: Text('Drawer Header'),
+            ),
+            ListTile(
+              leading: Icon(Icons.message),
+              title: Text('Message'),
+            ),
+            ListTile(
+              leading: Icon(Icons.account_circle),
+              title: Text('Profile'),
+            ),
+            ListTile(
+              leading: Icon(Icons.settings),
+              title: Text('configuration'),
+            )
+          ],
+        ),
+      ),
       body: Column(
         children: [
           RaisedButton(
