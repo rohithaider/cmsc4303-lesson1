@@ -26,7 +26,16 @@ class ImageScreen extends StatelessWidget {
             color: Colors.teal,
             child: Image.network(
                 'https://m.media-amazon.com/images/I/81fA3NNiBRL._AC_UL480_FMwebp_QL65_.jpg'),
-          )
+          ),
+          Icon(
+            Icons.system_update,
+            size: 200,
+            color: Colors.pink,
+          ),
+          Container(
+              height: 200,
+              color: Colors.yellow[100],
+              child: Image.asset('images/download.jpg'))
         ],
       ),
     );
