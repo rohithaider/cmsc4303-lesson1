@@ -8,7 +8,27 @@ class ImageScreen extends StatelessWidget {
       appBar: AppBar(
         title: Text('Image demo screen'),
       ),
-      body: Text('Image'),
+      body: ListView(
+        children: [
+          Container(
+            height: 200,
+            color: Colors.blueAccent,
+            child: Image.network(
+                'https://m.media-amazon.com/images/I/815lIY15H4L._AC_UL480_FMwebp_QL65_.jpg'),
+          ),
+          Icon(
+            Icons.ac_unit,
+            size: 100,
+            color: Colors.red,
+          ),
+          Container(
+            height: 200,
+            color: Colors.teal,
+            child: Image.network(
+                'https://m.media-amazon.com/images/I/81fA3NNiBRL._AC_UL480_FMwebp_QL65_.jpg'),
+          )
+        ],
+      ),
     );
   }
 }
