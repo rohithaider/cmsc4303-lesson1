@@ -8,7 +8,19 @@ class MaterialDesignScreen extends StatelessWidget {
       appBar: AppBar(
         title: Text('Material Design Style'),
       ),
-      body: Text('Material'),
+      body: Column(
+        children: [
+          Text(
+            'one',
+            style: TextStyle(
+              color: Colors.yellow,
+              fontSize: 24.0,
+              fontFamily: 'Courier New',
+            ),
+          ),
+          Text('two'),
+        ],
+      ),
     );
   }
 }
