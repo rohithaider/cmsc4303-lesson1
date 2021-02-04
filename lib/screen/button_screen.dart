@@ -29,6 +29,20 @@ class ButtonScreen extends StatelessWidget {
             elevation: 20.0,
             label:
                 Text('RaisedButton.icon', style: Theme.of(context).textTheme.headline5),
+          ),
+          FlatButton(
+            onPressed: () => print('Flat Button'),
+            child: Text('Flat Button', style: Theme.of(context).textTheme.headline5),
+            color: Colors.teal[900],
+            splashColor: Colors.teal[50],
+          ),
+          IconButton(
+            icon: Icon(
+              Icons.analytics,
+              size: 50,
+              color: Colors.yellow,
+            ),
+            onPressed: () => print('Icon Button'),
           )
         ],
       ),
