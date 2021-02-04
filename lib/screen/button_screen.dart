@@ -16,12 +16,20 @@ class ButtonScreen extends StatelessWidget {
         children: [
           RaisedButton(
             onPressed: () => print('raised button 1'),
+            elevation: 30,
             child: Text(
               'Raised button 1',
               style: Theme.of(context).textTheme.headline5,
             ),
             padding: EdgeInsets.fromLTRB(20.0, 10.0, 0.0, 30),
           ),
+          RaisedButton.icon(
+            onPressed: () => print('RaisedButton.icon'),
+            icon: Icon(Icons.alarm_add),
+            elevation: 20.0,
+            label:
+                Text('RaisedButton.icon', style: Theme.of(context).textTheme.headline5),
+          )
         ],
       ),
     );
