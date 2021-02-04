@@ -52,19 +52,22 @@ class StartScreen extends StatelessWidget {
             onPressed: () => Navigator.pushNamed(
                 context, MaterialDesignScreen.routeName), // navigating to another screen
 
-            child: Text('Material Design Demo'),
+            child: Text(
+              'Material Design Demo',
+              style: Theme.of(context).textTheme.button,
+            ),
           ),
           RaisedButton(
             onPressed: () => Navigator.pushNamed(context, ImageScreen.routeName),
-            child: Text('Image Demo Screen'),
+            child: Text('Image Demo Screen', style: Theme.of(context).textTheme.button),
           ),
           RaisedButton(
             onPressed: () => Navigator.pushNamed(context, ButtonScreen.routeName),
-            child: Text('Button Demo Screen'),
+            child: Text('Button Demo Screen', style: Theme.of(context).textTheme.button),
           ),
           RaisedButton(
             onPressed: () => Navigator.pushNamed(context, FontScreen.routeName),
-            child: Text('Custom Font Demo'),
+            child: Text('Custom Font Demo', style: Theme.of(context).textTheme.button),
           ),
         ],
       ),

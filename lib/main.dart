@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 import 'package:lesson1/screen/button_screen.dart';
 import 'package:lesson1/screen/font_screen.dart';
@@ -15,11 +17,13 @@ class Lesson1App extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-          brightness: Brightness.dark,
-          fontFamily: 'Lobster',
-          primaryColor: Colors.red[700],
-          textTheme:
-              TextTheme(headline1: TextStyle(fontSize: 30.0, color: Colors.yellow[900]))),
+        brightness: Brightness.dark,
+        fontFamily: 'IndieFlower',
+        primaryColor: Colors.red[700],
+        textTheme: TextTheme(
+          button: TextStyle(fontFamily: 'Lobster', fontSize: 28),
+        ),
+      ),
       initialRoute: StartScreen.routeName,
       routes: {
         StartScreen.routeName: (context) => StartScreen(),
