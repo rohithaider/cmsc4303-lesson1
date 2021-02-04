@@ -5,6 +5,7 @@ import 'package:lesson1/screen/button_screen.dart';
 import 'package:lesson1/screen/font_screen.dart';
 import 'package:lesson1/screen/image_screen.dart';
 import 'package:lesson1/screen/materialdesign_screen.dart';
+import 'package:lesson1/screen/rowvol_screen.dart';
 import 'package:lesson1/screen/start_screen.dart';
 
 void main() {
@@ -32,6 +33,7 @@ class Lesson1App extends StatelessWidget {
         ImageScreen.routeName: (context) => ImageScreen(),
         ButtonScreen.routeName: (context) => ButtonScreen(),
         FontScreen.routeName: (context) => FontScreen(),
+        RowColScreen.routeName: (context) => RowColScreen(),
       },
     );
   }
