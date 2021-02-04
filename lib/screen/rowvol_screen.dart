@@ -21,12 +21,39 @@ class RowColScreen extends StatelessWidget {
                     style: Theme.of(context).textTheme.headline3,
                   ),
                 ),
-                Container(
-                  color: Colors.teal[900],
-                  child: Text(
-                    'Row 2',
-                    style: Theme.of(context).textTheme.headline3,
-                  ),
+                Wrap(
+                  spacing: 20.0,
+                  runSpacing: 10.0,
+                  children: [
+                    Container(
+                      color: Colors.teal[900],
+                      child: Text(
+                        'Row 2-1',
+                        style: Theme.of(context).textTheme.headline3,
+                      ),
+                    ),
+                    Container(
+                      color: Colors.teal[900],
+                      child: Text(
+                        'Row 2-2',
+                        style: Theme.of(context).textTheme.headline3,
+                      ),
+                    ),
+                    Container(
+                      color: Colors.teal[900],
+                      child: Text(
+                        'Row 2-3',
+                        style: Theme.of(context).textTheme.headline3,
+                      ),
+                    ),
+                    Container(
+                      color: Colors.teal[900],
+                      child: Text(
+                        'Row 2-4',
+                        style: Theme.of(context).textTheme.headline3,
+                      ),
+                    ),
+                  ],
                 ),
                 Container(
                   color: Colors.teal[900],
