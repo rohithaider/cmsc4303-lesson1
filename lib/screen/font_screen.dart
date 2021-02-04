@@ -8,7 +8,18 @@ class FontScreen extends StatelessWidget {
       appBar: AppBar(
         title: Text('Font Demo'),
       ),
-      body: Text('Font Demo'),
+      body: Column(
+        children: [
+          Text(
+            'Font demo for mobile application dev class ',
+            style: TextStyle(fontSize: 30.0, fontFamily: 'Lobster'),
+          ),
+          Text(
+            'Font demo for mobile application dev class ',
+            style: TextStyle(fontSize: 30.0, fontFamily: 'IndieFlower'),
+          ),
+        ],
+      ),
     );
   }
 }
