@@ -12,7 +12,6 @@ class FontScreen extends StatelessWidget {
         children: [
           Text(
             'Font demo for mobile application dev class ',
-            style: TextStyle(fontSize: 30.0, fontFamily: 'Lobster'),
           ),
           Text(
             'Font demo for mobile application dev class ',
