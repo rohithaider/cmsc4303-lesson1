@@ -55,6 +55,15 @@ class RowColScreen extends StatelessWidget {
                     ),
                   ],
                 ),
+                Row(
+                  children: [
+                    Expanded(
+                      child: Image.network(
+                          'https://m.media-amazon.com/images/I/81fA3NNiBRL._AC_UL480_FMwebp_QL65_.jpg'),
+                    ),
+                    Expanded(child: Image.asset('images/download.jpg')),
+                  ],
+                ),
                 Container(
                   color: Colors.teal[900],
                   child: Text(

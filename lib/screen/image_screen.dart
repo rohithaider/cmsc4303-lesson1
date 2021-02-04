@@ -33,9 +33,10 @@ class ImageScreen extends StatelessWidget {
             color: Colors.pink,
           ),
           Container(
-              height: 200,
-              color: Colors.yellow[100],
-              child: Image.asset('images/download.jpg'))
+            height: 200,
+            color: Colors.yellow[100],
+            child: Image.asset('images/download.jpg'),
+          )
         ],
       ),
     );
