@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:lesson1/screen/button_screen.dart';
+import 'package:lesson1/screen/font_screen.dart';
 import 'package:lesson1/screen/image_screen.dart';
 import 'package:lesson1/screen/materialdesign_screen.dart';
 import 'package:lesson1/screen/start_screen.dart';
@@ -25,6 +26,7 @@ class Lesson1App extends StatelessWidget {
             MaterialDesignScreen(), //using annoynimous function and arrow function. buildcontext is not needed
         ImageScreen.routeName: (context) => ImageScreen(),
         ButtonScreen.routeName: (context) => ButtonScreen(),
+        FontScreen.routeName: (context) => FontScreen(),
       },
     );
   }
