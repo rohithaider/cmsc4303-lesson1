@@ -32,6 +32,27 @@ class ExpandedWidgetScreen extends StatelessWidget {
               ),
             ],
           ),
+          Expanded(
+            flex: 1,
+            child: Container(
+              color: Colors.yellow[800],
+              child: Text('AA', style: Theme.of(context).textTheme.headline6),
+            ),
+          ),
+          Expanded(
+            flex: 1,
+            child: Container(
+              color: Colors.teal[800],
+              child: Text('BB', style: Theme.of(context).textTheme.headline6),
+            ),
+          ),
+          Expanded(
+            flex: 1,
+            child: Container(
+              color: Colors.red[800],
+              child: Text('CC', style: Theme.of(context).textTheme.headline6),
+            ),
+          )
         ],
       ),
     );
