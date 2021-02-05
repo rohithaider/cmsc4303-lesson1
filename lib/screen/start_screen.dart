@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:lesson1/screen/button_screen.dart';
+import 'package:lesson1/screen/expandedwidget_screen.dart';
 import 'package:lesson1/screen/font_screen.dart';
 import 'package:lesson1/screen/image_screen.dart';
 import 'package:lesson1/screen/materialdesign_screen.dart';
@@ -79,6 +80,12 @@ class StartScreen extends StatelessWidget {
               onPressed: () => Navigator.pushNamed(context, RowColScreen.routeName),
               child:
                   Text('Row Col layout Demo', style: Theme.of(context).textTheme.button),
+            ),
+            RaisedButton(
+              onPressed: () =>
+                  Navigator.pushNamed(context, ExpandedWidgetScreen.routeName),
+              child:
+                  Text('Expanded Widget Demo', style: Theme.of(context).textTheme.button),
             ),
           ],
         ),
