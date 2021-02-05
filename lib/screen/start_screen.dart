@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:lesson1/screen/businesscard_screen.dart';
 import 'package:lesson1/screen/button_screen.dart';
 import 'package:lesson1/screen/expandedwidget_screen.dart';
 import 'package:lesson1/screen/font_screen.dart';
@@ -86,6 +87,10 @@ class StartScreen extends StatelessWidget {
                   Navigator.pushNamed(context, ExpandedWidgetScreen.routeName),
               child:
                   Text('Expanded Widget Demo', style: Theme.of(context).textTheme.button),
+            ),
+            RaisedButton(
+              onPressed: () => Navigator.pushNamed(context, BusinessCardScreen.routeName),
+              child: Text('My Business Card', style: Theme.of(context).textTheme.button),
             ),
           ],
         ),

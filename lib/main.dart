@@ -1,6 +1,7 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:lesson1/screen/businesscard_screen.dart';
 import 'package:lesson1/screen/button_screen.dart';
 import 'package:lesson1/screen/expandedwidget_screen.dart';
 import 'package:lesson1/screen/font_screen.dart';
@@ -36,6 +37,7 @@ class Lesson1App extends StatelessWidget {
         FontScreen.routeName: (context) => FontScreen(),
         RowColScreen.routeName: (context) => RowColScreen(),
         ExpandedWidgetScreen.routeName: (context) => ExpandedWidgetScreen(),
+        BusinessCardScreen.routeName: (context) => BusinessCardScreen(),
       },
     );
   }
